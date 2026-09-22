@@ -28,7 +28,7 @@ static inline void swap_i64(int64_t *a, int64_t *b) {
     int64_t t = *a; *a = *b; *b = t;
 }
 
-/* 插入排序：适合 n 较小（经验阈值 16~32）或基本有序的数组 */
+/* 插入排序：适合 n 较小的情形（经验阈值 16~32）或基本有序的数组 */
 static void insertion_sort(int64_t *a, size_t lo, size_t hi) { /* 排序 [lo, hi] */
     for (size_t i = lo + 1; i <= hi; i++) {
         int64_t key = a[i];
