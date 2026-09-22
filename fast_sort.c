@@ -9,7 +9,7 @@
  *    - 递归深度超过 2*log2(n) 时退化为堆排序，保证最坏情况 O(n log n)
  *
  * 2) radix_sort_u64: LSD 基数排序，仅适用于无符号整数（uint64_t）
- *    - 8 位一个 pass，共 8 次，时间复杂度 O(n)，是最快的整数排序
+ *    - 8 位一个 pass，共 8 次，时间复杂度为 O(n)，是最快的整数排序
  *
  * 编译: gcc -O2 -o fast_sort fast_sort.c
  * 运行: ./fast_sort
